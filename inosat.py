@@ -82,7 +82,6 @@ async def main():
         sem : asyncio.Semaphore
         session : aiohttp.ClientSession
         link : str
-            image link
     """
     connector = aiohttp.TCPConnector(force_close=True, limit=30)
     sem = asyncio.Semaphore(30)
